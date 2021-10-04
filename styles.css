@@ -8,12 +8,11 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #325466;
+    background-color: #294554;
     font-family: 'Press Start 2P', cursive;
 }
 header{
     height: 580px;
-    margin-left: 150px;
 }
 main{
     flex-grow: 1;
@@ -30,6 +29,7 @@ h1{
     height: 432px;
     font-family: 'Press Start 2P', cursive;
     font-weight: normal;
+    text-shadow: 10px 10px 0px #000000;
 }
 button{
     width: 470px;
@@ -41,7 +41,7 @@ button{
     margin-bottom: 80px;
     cursor: pointer;
     transition: all .2s linear;
-    background: #DADADA;
+    background: #F5F2EB;
 }
 button:hover{
     filter: grayscale(0%);
@@ -50,7 +50,8 @@ button:hover{
 .center{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    text-align: end;
     color: white;
     margin-bottom: 5px;
 }
@@ -64,8 +65,16 @@ button:hover{
     color: #54FF51;
 }
 .simbolo{
-    font-size: 288px;
-    color: #915EFF;
+    position: absolute;
+    font-size: 180px;
+    color: #FDC827;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.simbolo_o{
+    font-size: 180px;
+    color: #B441B6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,6 +93,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 110px;
 }
 .verde{
     background-color: #84FF70;

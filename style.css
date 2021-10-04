@@ -8,7 +8,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #325466;
+    background-color: #294554;
     font-family: 'Press Start 2P', cursive;
 }
 header{
@@ -28,6 +28,8 @@ h1{
     height: 432px;
     font-family: 'Press Start 2P', cursive;
     font-weight: normal;
+    padding-left: 70px;
+    text-shadow: 10px 10px 0px #000000;
 }
 button{
     width: 470px;
@@ -40,11 +42,11 @@ button{
     margin-left: 100px;
     cursor: pointer;
     transition: all .2s linear;
-    background: #DADADA;
+    background: #F5F2EB;
 }
 button:hover{
     filter: grayscale(0%);
-    transform: scale(120%);
+    transform: scale(110%);
 }
 .center{
     display: flex;
@@ -63,8 +65,16 @@ button:hover{
     color: #54FF51;
 }
 .simbolo{
+    position: absolute;
     font-size: 288px;
-    color: #915EFF;
+    color: #FDC827;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.simbolo_o{
+    font-size: 288px;
+    color: #B441B6;
     display: flex;
     justify-content: center;
     align-items: center;
