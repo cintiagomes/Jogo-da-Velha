@@ -30,7 +30,7 @@
     background-color: #ffffff;
     }
      
-    .block {
+    .bloco {
     display: flex;
     width: 250px;
     height: 130px;
@@ -41,7 +41,7 @@
     transition: 0.2s ease-in-out;
     }
      
-    .block:hover {
+    .bloco:hover {
     cursor: pointer;
     background: #54ff51;
     }
