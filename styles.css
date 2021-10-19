@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -11,10 +11,10 @@ body{
     background-color: #294554;
     font-family: 'Press Start 2P', cursive;
 }
-header{
+header {
     height: 580px;
 }
-main{
+main {
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@ main{
     text-align: center;
     margin-top: 150px;
 }
-h1{
+h1 {
     font-size: 144px;
     width: 816px;
     height: 432px;
@@ -32,7 +32,7 @@ h1{
     text-shadow: 10px 10px 0px #000000;
     margin-left: 210px;
 }
-button{
+button {
     width: 570px;
     height: 85px;
     font-size: 25px;
@@ -41,14 +41,14 @@ button{
     box-shadow: 10px 10px 0px black;
     margin-bottom: 80px;
     cursor: pointer;
-    transition: all .2s linear;
-    background: #F5F2EB;
+    transition: all 0.2s linear;
+    background: #f5f2eb;
 }
-button:hover{
+button:hover {
     filter: grayscale(0%);
     transform: scale(120%);
 }
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -56,48 +56,50 @@ button:hover{
     color: white;
     margin-bottom: 5px;
 }
-.titulo-jogo{
+.titulo-jogo {
     margin-top: 50px;
-    color: #54FF51;
+    color: #54ff51;
 }
-.simbolo{
+.simbolo {
     position: absolute;
     font-size: 180px;
-    color: #FDC827;
+    color: #fdc827;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    left: -205px;
+    height: 520px;
 }
-.simbolo_o{
+.simbolo_o {
     font-size: 180px;
-    color: #B441B6;
+    color: #b441b6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.title-nivel{
+.title-nivel {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.button-niveis{
+.button-niveis {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.conjunto{
+.conjunto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 110px;
 }
-.verde{
-    background-color: #84FF70;
+.verde {
+    background-color: #84ff70;
 }
-.amarelo{
-    background-color: #FFF967;
+.amarelo {
+    background-color: #fff967;
 }
-.vermelho{
-    background-color: #FF6767;
+.vermelho {
+    background-color: #ff6767;
 }
