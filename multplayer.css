@@ -50,6 +50,7 @@ h2, h3{
     transition: 0.2s ease-in-out;
     font-size: 100px;
     color: #54ff51;
+    
 }
 
 .bloco:hover {
@@ -109,8 +110,3 @@ main {
     text-shadow: 5px 5px 0px #000000;
     padding-right: 90px;
 }
-/* em {
-    font-size: 30px;
-    font-style: normal;
-    padding: 25px;
-} */
