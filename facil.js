@@ -1,7 +1,8 @@
 'use script'
 
 const blocos = document.querySelectorAll(".bloco");
-let checarTurno = true;
+let fimDeJogo = false;
+// let checarTurno = true;
 const PlayerX = "X";
 const PlayerO = "O";
 
@@ -9,23 +10,48 @@ const combinacoa = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8]
 ]
 
 document.addEventListener("click", (event) =>{
     if (event.target.matches(".bloco")) {
         //console.log(event.target.id);
-        jogada(event.target.id);
+        jogada(event.target.id, PlayerX);
+        setTimeout(() => bot(), 200);
     }
 });
 
-function jogada(id) {
+function bot() {
+    const posicoesDisponiveis = [];
+    for (index in blocos) {
+        if (!isNaN(index)){ 
+            if(
+                !blocos[index].classList.contains("x") &&
+                !blocos[index].classList.contains("o")
+            ) {
+            posicoesDisponiveis.push(index);
+            
+            }
+        }
+
+    }
+
+    const posicaoAleatoria = Math.floor(
+        Math.random() * posicoesDisponiveis.length
+    );
+
+    if (!fimDeJogo) {
+        jogada(posicoesDisponiveis[posicaoAleatoria], PlayerO);   
+    }
+    
+}
+
+function jogada(id, turno) {
     const bloco = document.getElementById(id);
-    turno = checarTurno ? PlayerX : PlayerO;
     bloco.textContent = turno;
     bloco.classList.add(turno);
     checarVencendor(turno);
@@ -42,8 +68,6 @@ function checarVencendor(turno) {
         encerrarJogo(turno);
     }else if(checarEmpate()){
         encerrarJogo();
-    }else{
-        checarTurno = !checarTurno;
     }
 }
 
